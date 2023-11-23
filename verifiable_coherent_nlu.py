@@ -33,13 +33,13 @@ DRIVE_PATH = 'drive/My Drive/Verifiable-Coherent-NLU/'
 
 """
 
-mode = 'bert' # BERT large
+# mode = 'bert' # BERT large
 # mode = 'roberta' # RoBERTa large
 # mode = 'roberta_mnli' # RoBERTa large pre-trained on MNLI
 # mode = 'deberta' # DeBERTa base for training on TRIP
 # mode = 'deberta_large' # DeBERTa large for training on CE and ART
 # mode = 'distilbert'
-# mode = 'XLNet'
+mode = 'XLNet'
 
 """2.   Name of the task we want to train or evaluate on. Set `debug` to `True` to run quick training/evaluation jobs on only a small amount of data."""
 
@@ -204,7 +204,7 @@ tokenizer = tokenizer_class.from_pretrained(f"{DRIVE_PATH}/art_finetuned/bs_15_l
 """
 
 from transformers import BertForSequenceClassification, RobertaForSequenceClassification, DebertaForSequenceClassification, AlbertForSequenceClassification, AdamW, XLNetForSequenceClassification, DistilBertForSequenceClassification
-from transformers import BertForMultipleChoice, RobertaForMultipleChoice, AlbertForMultipleChoice, DebertaModel
+from transformers import BertForMultipleChoice, RobertaForMultipleChoice, AlbertForMultipleChoice, DistilBertForMultipleChoice, XLNetForMultipleChoice
 from transformers import BertModel, RobertaModel, AlbertModel, DebertaModel, T5Model, T5EncoderModel, GPT2Model, DistilBertModel, XLNetModel
 from transformers import RobertaForMaskedLM
 from transformers import BertConfig, RobertaConfig, DebertaConfig, AlbertConfig, T5Config, GPT2Config, DistilBertConfig, XLNetConfig
@@ -246,6 +246,14 @@ else:
     model_class = DebertaForMultipleChoice
     config_class = DebertaConfig
     emb_class = DebertaModel
+  elif mode == 'distilbert':
+    model_class = DistilBertForMultipleChoice
+    config_clss = DistilBertConfig
+    emb_class = DistilBertModel
+  elif mode == 'XLNet':
+    model_class = XLNetForMultipleChoice
+    config_class = XLNetConfig
+    emb_class = XLNetModel
 
 """## Data Setup
 
