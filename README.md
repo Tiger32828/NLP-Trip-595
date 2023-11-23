@@ -1,7 +1,4 @@
-**(October 2022)** TRIP is now available on HuggingFace [datasets](https://huggingface.co/datasets/sled-umich/TRIP).
-
-
-**(May 2022)** We recently discovered a small typo in the test results reported for RoBERTa in Table 3 of our Tiered Reasoning for Intuitive Physics paper in Findings of EMNLP 2021 ([here](https://aclanthology.org/2021.findings-emnlp.422/) and [here](https://arxiv.org/abs/2109.04922)). We have submitted corrections to ACL and arXiv, so please refer to the revised versions of the paper once they are processed. No other results are affected by this correction, nor are released code and models. Thank you to Oren Sultan for bringing this to our attention!
+This repository is developed from the original paper and code by Shane Storks.
 
 # Verifiable-Coherent-NLU
 Shared repository for TRIP dataset for verifiable NLU and coherence measurement for text classifiers. Covers the following publications in Findings of EMNLP 2021:
