@@ -1,6 +1,8 @@
-This repository is developed from the original paper and code by Shane Storks.
+# Natural Language Processing Project
 
-# Verifiable-Coherent-NLU
+Please see the uploaded Project_Report.pdf for a detailed report. Please see the link below for the original paper and code by Shane Storks: https://github.com/sled-group/Verifiable-Coherent-NLU
+
+Verifiable-Coherent-NLU
 Shared repository for TRIP dataset for verifiable NLU and coherence measurement for text classifiers. Covers the following publications in Findings of EMNLP 2021:
 1. Shane Storks, Qiaozi Gao, Yichi Zhang, and Joyce Chai. (2021). [Tiered Reasoning for Intuitive Physics: Toward Verifiable Commonsense Language Understanding](https://arxiv.org/abs/2109.04947). In _Findings of EMNLP 2021_.
 2. Shane Storks and Joyce Chai. (2021). [Beyond the Tip of the Iceberg: Assessing Coherence of Text Classifiers](https://arxiv.org/abs/2109.04922). In _Findings of EMNLP 2021_.
