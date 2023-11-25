@@ -1,4 +1,6 @@
 # Natural Language Processing Project
+Yichen Zhong & Zhixuan Chen
+Group 11
 
 Please see the uploaded Project_Report.pdf for a detailed report. Please see the link below for the original paper and code by Shane Storks: https://github.com/sled-group/Verifiable-Coherent-NLU
 
